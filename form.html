@@ -1,0 +1,67 @@
+<!-- there are many types of forms. lets see each one of them one by one  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- forms -->
+    <div>
+        <h1>student id card form.</h1>
+        <form action="form.php">
+            <!-- for text input  -->
+            your name<input  type="text"  placeholder="your name goes here." ><br>
+
+            <!-- for MCQs we use radio buttons -->
+            <!-- using labels and section IDs. -->
+            <label for="sectionid1">
+                section:<input type="radio" name="section" value="section A" id="sectionid1">section A
+            </label>
+            <label for="sectionid2">
+                <input type="radio" name="section" value="section B" id="sectionid2">section B
+            </label>
+            <label for="sectionid3">
+                <input type="radio" name="section" value="section C" id="sectionid3">section C
+            </label>
+            <br>
+
+            <!-- for multiple correct choice we use checkbox -->
+            <label for="sectionid4">
+                hobby:<input type="checkbox" name="hobby" value="singing" id="sectionid4">singing
+            </label>
+            <label for="sectionid5">
+                <input type="checkbox" name="hobby" value="dancing" id="sectionid5">dancing
+            </label>
+            <label for="sectionid6">
+                <input type="checkbox" name="hobby" value="coding" id="sectionid6">coding
+            </label>
+            <br>
+
+
+            <!-- for selection from a drop down menu we use select -->
+            select your state: <select name="state" id="state" >
+                <option value="selet">select</option>
+                <option value="BIHAR">BIHAR</option>
+                <option value="JHARKHAND">JHARKHAND</option>
+                <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+                <option value="RAJASTHAN">RAJASTHAN</option>
+                <option value="JAMMU">JAMMU</option>
+
+            </select>
+            <br>
+
+            <!-- for a specific text area we use text area -->
+            feedback: <textarea name="feedback" id="f" cols="20" rows="5" placeholder="your feedback goes here." ></textarea>
+
+
+
+
+            
+
+        </form>
+    </div>
+</body>
+</html>
